@@ -23,6 +23,10 @@ def load():
     qus_title_terms = pd.read_csv('src_ex/qus_title_terms.csv')
     qus_body_terms = pd.read_csv('src_ex/qus_body_terms.csv')
     ans_body_terms = pd.read_csv('src_ex/ans_body_terms.csv')
+    
+    qus_title_terms = qus_title_terms.groupby('質問ID').agg(list).reset_index()
+    qus_body_terms = qus_body_terms.groupby('質問ID').agg(list).reset_index()
+    ans_body_terms = ans_body_terms.groupby('回答ID').agg(list).reset_index()
     pass
 
 # %% [markdown]

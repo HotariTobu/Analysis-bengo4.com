@@ -23,10 +23,14 @@ def load():
     qus_title_terms = pd.read_csv('src_ex/qus_title_terms.csv')
     qus_body_terms = pd.read_csv('src_ex/qus_body_terms.csv')
     ans_body_terms = pd.read_csv('src_ex/ans_body_terms.csv')
-    
+
     qus_title_terms = qus_title_terms.groupby('質問ID').agg(list).reset_index()
     qus_body_terms = qus_body_terms.groupby('質問ID').agg(list).reset_index()
     ans_body_terms = ans_body_terms.groupby('回答ID').agg(list).reset_index()
+    
+    qus_terms = qus.drop(['表題', '質問本文'], axis='columns').merge(qus_title_terms)
+    qus_terms = qus_terms.merge(qus_body_terms)
+    ans_terms = ans.drop('回答本文', axis='columns').merge(ans_body_terms)
     pass
 
 # %% [markdown]

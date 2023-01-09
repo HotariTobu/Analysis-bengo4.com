@@ -16,6 +16,9 @@ if __name__ == '__main__':
 
 import save
 
+def load():
+    pass
+
 # %% [markdown]
 # データの読み込み
 

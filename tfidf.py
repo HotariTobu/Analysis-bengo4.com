@@ -19,6 +19,10 @@ import save
 def load():
     qus = pd.read_csv('src_ex/qus.csv')
     ans = pd.read_csv('src_ex/ans.csv')
+    
+    qus_title_terms = pd.read_csv('src_ex/qus_title_terms.csv')
+    qus_body_terms = pd.read_csv('src_ex/qus_body_terms.csv')
+    ans_body_terms = pd.read_csv('src_ex/ans_body_terms.csv')
     pass
 
 # %% [markdown]

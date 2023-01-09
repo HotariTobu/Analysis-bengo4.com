@@ -17,6 +17,8 @@ if __name__ == '__main__':
 import save
 
 def load():
+    qus = pd.read_csv('src_ex/qus.csv')
+    ans = pd.read_csv('src_ex/ans.csv')
     pass
 
 # %% [markdown]

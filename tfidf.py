@@ -113,6 +113,9 @@ def tfidf(term_lists):
     tf_dict = tf(term_lists)
 
     term_list_counts = {}
+    all_term_list_count = len(term_lists)
+
+    tfidf_dict = {}
 
     with Pool(8) as p:
         term_sets = p.map(set, term_lists, chunksize=1024)
@@ -122,12 +125,7 @@ def tfidf(term_lists):
                     term_list_counts[term] += 1
                 else:
                     term_list_counts[term] = 1
-
-    all_term_list_count = len(term_lists)
-
-    tfidf_dict = {}
-
-    with Pool(8) as p:
+                    
         idf_gen = [(term_list_counts[term], all_term_list_count) for term in tf_dict]
         idfs = p.map(idf, idf_gen, chunksize=1024)
         tfidf_dict = {term: tf * idf for (term, tf), idf in zip(tf_dict.items(), idfs)}

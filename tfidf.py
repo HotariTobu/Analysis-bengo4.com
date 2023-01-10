@@ -211,13 +211,6 @@ def tfidf(term_lists):
 if __name__ == '__main__':
     qus_terms, ans_terms = load()
 
-    print('loaded!')
-
-    #######################
-    qus_terms = qus_terms.sample(1000)
-    ans_terms = ans_terms.sample(1000)
-    #######################
-
     ans_body_by_question_id = ans_terms.groupby('質問ID').agg({'回答本文': sum}, start=[]).reset_index()
     ans_qus = qus_terms.merge(ans_body_by_question_id)[['カテゴリ名', '表題', '質問本文', '回答本文']]
     terms_by_question_id = ans_qus['表題'] + ans_qus['質問本文'] + ans_qus['回答本文']

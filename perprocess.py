@@ -131,7 +131,7 @@ ans_qus_datetime = pd.merge(
     ans[['回答ID', '質問ID', '回答日時']],
     qus[['質問ID', '質問日時']]
 )
-ans_qus_datetime['回答までの時間'] = [dt1 - dt2 for (dt1, dt2) in zip(ans_qus_datetime['回答日時'], ans_qus_datetime['質問日時'])]
+ans_qus_datetime['回答までの時間'] = [subtract(dts) for dts in zip(ans_qus_datetime['回答日時'], ans_qus_datetime['質問日時'])]
 qus = qus.merge(ans_qus_datetime[['質問ID', '回答までの時間']].groupby('質問ID').min().reset_index())
 
 # %%

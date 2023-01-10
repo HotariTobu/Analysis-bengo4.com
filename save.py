@@ -30,7 +30,7 @@ def lists(index, lists, output_path):
 def dict(dict_data, key_name, value_name, output_path):
     df = pd.DataFrame(
         index=pd.Series(dict_data.keys(), name=key_name),
-        columns={
+        data={
             value_name: dict_data.values(),
         }
     )

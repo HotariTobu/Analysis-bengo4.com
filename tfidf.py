@@ -246,10 +246,10 @@ if __name__ == '__main__':
 
     save.dict(qus_title_tf, '用語', 'TF', 'dst/tf/qus_title_tf.csv')
     save.dict(qus_body_tf, '用語', 'TF', 'dst/tf/qus_body_tf.csv')
-    save.dict(ans_body_tf, '用語', 'TF', 'dst/tf/and_body_tf.csv')
+    save.dict(ans_body_tf, '用語', 'TF', 'dst/tf/ans_body_tf.csv')
     save.dict(all_tf, '用語', 'TF', 'dst/tf/all_tf.csv')
 
     save.dict(qus_title_tfidf, '用語', 'TFIDF', 'dst/tfidf/qus_title_tfidf.csv')
     save.dict(qus_body_tfidf, '用語', 'TFIDF', 'dst/tfidf/qus_body_tfidf.csv')
-    save.dict(ans_body_tfidf, '用語', 'TFIDF', 'dst/tfidf/and_body_tfidf.csv')
+    save.dict(ans_body_tfidf, '用語', 'TFIDF', 'dst/tfidf/ans_body_tfidf.csv')
     save.dict(all_tfidf, '用語', 'TFIDF', 'dst/tfidf/all_tfidf.csv')

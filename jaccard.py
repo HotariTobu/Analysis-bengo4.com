@@ -81,6 +81,7 @@ def save_jaccard(jaccard_dict, output_path):
     data = [[*key, *value] for key, value in jaccard_dict.items()]
     df = pd.DataFrame(data, columns=['用語1', '用語2', '出現回数', 'Jaccard'])
     df.set_index(['用語1', '用語2'], inplace=True)
+    df.sort_values('Jaccard', ascending=False, inplace=True)
     df.to_csv(output_path)
 
 # %%

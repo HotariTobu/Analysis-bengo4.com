@@ -113,7 +113,7 @@ soupsieve==2.3.2.post1
 spacy==3.4.4
 spacy-legacy==3.0.11
 spacy-loggers==1.0.4
-srsly==2.4.5
+srsly==2.4.6
 stack-data==0.6.2
 SudachiDict-core==20221021
 SudachiPy==0.6.7

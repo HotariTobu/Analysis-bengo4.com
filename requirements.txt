@@ -129,7 +129,7 @@ typing_extensions==4.4.0
 uri-template==1.2.0
 urllib3==1.26.16
 wasabi==0.10.1
-wcwidth==0.2.5
+wcwidth==0.2.6
 webcolors==1.12
 webencodings==0.5.1
 websocket-client==1.4.2

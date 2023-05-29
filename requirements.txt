@@ -116,7 +116,7 @@ spacy-loggers==1.0.4
 srsly==2.4.5
 stack-data==0.6.2
 SudachiDict-core==20221021
-SudachiPy==0.6.6
+SudachiPy==0.6.7
 tenacity==8.1.0
 terminado==0.17.1
 thinc==8.1.6

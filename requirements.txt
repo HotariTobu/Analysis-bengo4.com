@@ -79,8 +79,8 @@ platformdirs==2.6.2
 plotly==5.11.0
 preshed==3.0.8
 prometheus-client==0.15.0
-prompt-toolkit==3.0.36
-psutil==5.9.5
+prompt-toolkit==3.0.38
+psutil==5.9.4
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21

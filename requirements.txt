@@ -119,7 +119,7 @@ SudachiDict-core==20221021
 SudachiPy==0.6.6
 tenacity==8.1.0
 terminado==0.17.1
-thinc==8.1.6
+thinc==8.1.10
 tinycss2==1.2.1
 tornado==6.2
 tqdm==4.64.1

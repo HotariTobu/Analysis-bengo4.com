@@ -103,7 +103,7 @@ rfc3986-validator==0.1.1
 scipy==1.9.3
 seaborn==0.12.2
 semantic-version==2.10.0
-Send2Trash==1.8.0
+Send2Trash==1.8.2
 setuptools-rust==1.5.2
 six==1.16.0
 smart-open==6.3.0

@@ -24,7 +24,7 @@ defusedxml==0.7.1
 entrypoints==0.4
 executing==1.2.0
 fastjsonschema==2.17.1
-fonttools==4.38.0
+fonttools==4.39.4
 fqdn==1.5.1
 ginza==5.1.2
 idna==3.4
